@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8b5e34">
+  <title>Trắc nghiệm Hán văn - 120 câu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div class="heading">
+        <h1>Trắc nghiệm Hán văn - Ngữ pháp</h1>
+        <p class="subtitle">120 câu ôn tập giữa học kỳ 4. Chọn đáp án để xem đúng/sai ngay.</p>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+      <div class="stats" aria-label="Thống kê bài làm">
+        <div class="pill">Đã làm: <strong id="done">0</strong>/120</div>
+        <div class="pill">Đúng: <strong id="correct">0</strong></div>
+        <div class="pill">Sai: <strong id="wrong">0</strong></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="toolbar">
+      <input id="search" class="search" placeholder="Tìm câu hỏi, chữ Hán hoặc đáp án..." autocomplete="off">
+      <button class="secondary" id="print">In trang</button>
+      <button class="secondary" id="shuffleAnswers">Xáo trộn đáp án</button>
+      <button class="secondary" id="shuffleQuestions">Xáo trộn câu hỏi</button>
+      <button id="reset">Làm lại</button>
+    </div>
+    <section id="quiz" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden>Không tìm thấy câu hỏi phù hợp.</p>
+  </main>
+
+  <footer>Nguồn nội dung: tài liệu ôn tập Hán văn do người dùng cung cấp.</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
